@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+header {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* NAVBAR */
+.navbar {
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    transition: 0.3s all;
+}
+
+.navbar img {
+    height: 40px; /* Adjust the height of the logo as needed */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar ul li:last-child {
+    margin-right: 0;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+.navbar-scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.page-content {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    width: 90%;
+    text-align: left;
+    z-index: 1;
+}
+
+.page-content h1 {
+    font-size: 60px;
+    margin-bottom: 12px;
+    line-height: 1.2;
+    color: #ffffff;
+}
+.card img {
+    text-align: center;
+    height: 130px !important;
+    width: 130px !important;
+    margin: auto;
+    justify-content: center;
+    position: relative;
+    top: -45px;
+    margin-bottom: 10px;
+    color: white;
+}
+.card {
+    cursor: pointer;
+    margin-top: 50px !important;
+    padding: 10px;
+    text-align: left;
+    width: 250px !important;
+    height: 340px !important;
+    align-items: center;
+    align-content: center;
+}
+.card-body p {
+    font-size: 24px;
+}
+
+.bg-testimonial {
+    position: relative;
+    background: linear-gradient(to bottom, #0079ff 65%, white 35%);
+    /* height: 100vh !important;
+    width: 100% !important; */
+}
+p a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+@media (max-width: 575.98px) {
+    .bg-testimonial {
+        position: relative;
+        background: #0079ff;
+    }
+    button h5 {
+        font-size: 14px;
+        margin: auto;
+    }
+    .page-content h1 {
+        font-size: 2rem;
+    }
+}
